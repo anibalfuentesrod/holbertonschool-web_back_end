@@ -1,10 +1,10 @@
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
-    "check-lint": "lint 3-default-parameter.js",
-    "dev": "npx babel-node 3-main.js",
+    "check-lint": "lint 4-rest-parameter.js",
+    "dev": "npx babel-node 4-main.js",
     "test": "jest",
-    "full-test": "./node_modules/.bin/eslint 3-default-parameter.js && jest"
+    "full-test": "./node_modules/.bin/eslint 4-rest-parameter.js && jest"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
