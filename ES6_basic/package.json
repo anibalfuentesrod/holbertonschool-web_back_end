@@ -1,10 +1,10 @@
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
-    "check-lint": "lint 1-block-scoped.js",
-    "dev": "npx babel-node 1-main.js",
+    "check-lint": "lint 2-arrow.js",
+    "dev": "npx babel-node 2-main.js",
     "test": "jest",
-    "full-test": "./node_modules/.bin/eslint 1-block-scoped.js && jest"
+    "full-test": "./node_modules/.bin/eslint 2-arrow.js && jest"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
