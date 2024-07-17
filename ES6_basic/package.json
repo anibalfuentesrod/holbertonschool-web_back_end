@@ -1,10 +1,10 @@
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
-    "check-lint": "lint 11-createEmployeesObject.js",
-    "dev": "npx babel-node 11-main.js",
+    "check-lint": "lint 12-createReportObject.js",
+    "dev": "npx babel-node 12-main.js",
     "test": "jest",
-    "full-test": "./node_modules/.bin/eslint 11-createEmployeesObject.js && jest"
+    "full-test": "./node_modules/.bin/eslint 12-createReportObject.js && jest"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
