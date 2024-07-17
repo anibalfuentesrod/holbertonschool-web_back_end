@@ -1,10 +1,10 @@
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
-    "check-lint": "lint 5-spread-operator.js",
-    "dev": "npx babel-node 5-main.js",
+    "check-lint": "lint 6-string-interpolation.js",
+    "dev": "npx babel-node 6-main.js",
     "test": "jest",
-    "full-test": "./node_modules/.bin/eslint 5-spread-operator.js && jest"
+    "full-test": "./node_modules/.bin/eslint 6-string-interpolation.js && jest"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
