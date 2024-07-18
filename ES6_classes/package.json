@@ -1,10 +1,10 @@
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
-    "check-lint": "lint 2-hbtn_course.js",
-    "dev": "npx babel-node 2-main.js",
+    "check-lint": "lint 3-currency.js",
+    "dev": "npx babel-node 3-main.js",
     "test": "jest",
-    "full-test": "./node_modules/.bin/eslint 2-hbtn_course.js && jest"
+    "full-test": "./node_modules/.bin/eslint 3-currency.js && jest"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
