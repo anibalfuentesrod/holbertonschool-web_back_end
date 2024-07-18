@@ -1,10 +1,10 @@
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
-    "check-lint": "lint 9-hoisting.js",
-    "dev": "npx babel-node 9-main.js",
+    "check-lint": "lint 10-car.js",
+    "dev": "npx babel-node 10-main.js",
     "test": "jest",
-    "full-test": "./node_modules/.bin/eslint 9-hoisting.js && jest"
+    "full-test": "./node_modules/.bin/eslint 10-car.js && jest"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
