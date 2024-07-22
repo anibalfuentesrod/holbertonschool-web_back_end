@@ -1,10 +1,10 @@
 {
     "scripts": {
       "lint": "./node_modules/.bin/eslint",
-      "check-lint": "lint 7-has_array_values.js",
-      "dev": "npx babel-node 7-main.js",
+      "check-lint": "lint 8-clean_set.js",
+      "dev": "npx babel-node 8-main.js",
       "test": "jest",
-      "full-test": "./node_modules/.bin/eslint 7-has_array_values.js && jest"
+      "full-test": "./node_modules/.bin/eslint 8-clean_set.js && jest"
     },
     "devDependencies": {
       "@babel/core": "^7.6.0",
