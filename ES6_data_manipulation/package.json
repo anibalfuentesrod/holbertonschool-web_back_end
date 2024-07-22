@@ -1,10 +1,10 @@
 {
     "scripts": {
       "lint": "./node_modules/.bin/eslint",
-      "check-lint": "lint 4-update_grade_by_city.js",
-      "dev": "npx babel-node 4-main.js",
+      "check-lint": "lint 5-typed_arrays.js",
+      "dev": "npx babel-node 5-main.js",
       "test": "jest",
-      "full-test": "./node_modules/.bin/eslint 4-update_grade_by_city.js && jest"
+      "full-test": "./node_modules/.bin/eslint 5-typed_arrays.js && jest"
     },
     "devDependencies": {
       "@babel/core": "^7.6.0",
