@@ -1,19 +1,19 @@
 {
-    "scripts": {
-      "lint": "./node_modules/.bin/eslint",
-      "check-lint": "lint 10-update_uniq_items.js",
-      "dev": "npx babel-node 10-main.js",
-      "test": "jest",
-      "full-test": "./node_modules/.bin/eslint 10-update_uniq_items.js && jest"
-    },
-    "devDependencies": {
-      "@babel/core": "^7.6.0",
-      "@babel/node": "^7.8.0",
-      "@babel/preset-env": "^7.6.0",
-      "eslint": "^7.32.0",
-      "eslint-config-airbnb-base": "^14.2.1",
-      "eslint-plugin-import": "^2.22.1",
-      "eslint-plugin-jest": "^24.1.5",
-      "jest": "^24.9.0"
-    }
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint 100-weak.js",
+    "dev": "npx babel-node 100-main.js",
+    "test": "jest",
+    "full-test": "./node_modules/.bin/eslint 100-weak.js && jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.6.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.5",
+    "jest": "^24.9.0"
   }
+}
