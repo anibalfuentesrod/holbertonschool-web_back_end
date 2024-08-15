@@ -16,5 +16,5 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         for j in range(0, len(delays) - i - 1):
             if delays[j] > delays[j + 1]:
                 delays[j], delays[j + 1] = delays[j + 1], delays[j]
-    
+
     return delays
