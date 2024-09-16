@@ -20,5 +20,5 @@ process.stdin.on('data', (data) => {
 
 // listen for the program to close
 process.on('exit', () => {
-  console.log('This important software is now closing\n');
+  console.log('This important software is now closing');
 });
