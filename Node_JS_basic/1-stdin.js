@@ -1,7 +1,7 @@
 // program that interacts with user
 
 // displays the initial message
-process.stdout.write('Welcome to Holberton School, what is your name?\r');
+process.stdout.write('Welcome to Holberton School, what is your name?');
 
 // listen for user input
 process.stdin.on('data', (data) => {
