@@ -1,7 +1,7 @@
 // program tha interacts with user
 
 // displays the initial msg
-process.stdout.write('Welcome to Holberton School, what is your name?');
+process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 // listen for user inputs
 process.stdin.on('data', (data) => {
@@ -17,5 +17,5 @@ process.stdin.on('data', (data) => {
 
 // listen for program to close
 process.on('exit', () => {
-  console.log('This important software is now closing');
+  console.log('This important software is now closing\n');
 });
