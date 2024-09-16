@@ -1,7 +1,7 @@
 // program that interacts with user
 
 // displays the initial message
-process.stdout.write('Welcome to Holberton School, what is your name?\n');
+process.stdout.write('Welcome to Holberton School, what is your name?\r');
 
 // listen for user input
 process.stdin.on('data', (data) => {
@@ -9,7 +9,7 @@ process.stdin.on('data', (data) => {
   const name = data.toString().trim();
 
   // Display the user input
-  process.stdout.write(`Your name is: ${name}\n`);
+  process.stdout.write(`Your name is: ${name}\r`);
 
   // ensure we wait a brief moment to handle child process cleanup properly
   setTimeout(() => {
@@ -20,5 +20,5 @@ process.stdin.on('data', (data) => {
 
 // listen for the program to close
 process.on('exit', () => {
-  console.log('This important software is now closing');
+  console.log('This important software is now closing\r');
 });
