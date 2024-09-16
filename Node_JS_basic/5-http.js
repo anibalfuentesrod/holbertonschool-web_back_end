@@ -24,8 +24,9 @@ const app = http.createServer((req, res) => {
       .then((studentData) => {
         res.end(studentData);
       })
-      .catch((error) => {
-        res.end(`${error.message}\n`);
+      .catch(() => {
+        // Send error message without using the error variable
+        res.end('Cannot load the database');
       });
   } else {
     res.end('404 Not Found');
