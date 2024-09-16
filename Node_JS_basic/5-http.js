@@ -12,7 +12,7 @@ const app = http.createServer((req, res) => {
   // Handle the root path "/"
   if (parsedUrl.pathname === '/') {
     res.end('Hello Holberton School!');
-  } else if (parsedUrl.pathname === '/students') { // Else block on the same line as the closing brace
+  } else if (parsedUrl.pathname === '/students') {
     // Respond with the student data
     res.write('This is the list of our students\n');
 
@@ -21,13 +21,13 @@ const app = http.createServer((req, res) => {
 
     // Call the countStudents function and append the output
     countStudents(databasePath)
-      .then(() => {
-        res.end();
+      .then((studentData) => {
+        res.end(studentData);
       })
       .catch((error) => {
-        res.end(error.message);
+        res.end(`${error.message}\n`);
       });
-  } else { // Else block on the same line as the closing brace
+  } else {
     res.end('404 Not Found');
   }
 });
