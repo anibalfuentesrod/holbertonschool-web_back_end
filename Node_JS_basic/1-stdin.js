@@ -1,21 +1,24 @@
-// program tha interacts with user
+// program that interacts with user
 
-// displays the initial msg
+// displays the initial message
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
-// listen for user inputs
+// listen for user input
 process.stdin.on('data', (data) => {
-  // take away extra spaces/newlines
+  // Trim any extra spaces/newlines
   const name = data.toString().trim();
 
-  // displays the user input
+  // Display the user input
   process.stdout.write(`Your name is: ${name}\n`);
 
-  // close the stdin streams to end the program
-  process.exit();
+  // ensure we wait a brief moment to handle child process cleanup properly
+  setTimeout(() => {
+    // close the stdin stream to end the program
+    process.exit();
+  }, 100);
 });
 
-// listen for program to close
+// listen for the program to close
 process.on('exit', () => {
-  console.log('This important software is now closing\r');
+  console.log('This important software is now closing');
 });
